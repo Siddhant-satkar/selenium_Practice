@@ -1,17 +1,13 @@
- package day26;
-
-import java.util.Set;
+package day26;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FirstTestCase {
+public class brouserMethods {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("java Test");
-		
-		ChromeDriver driver = new ChromeDriver();
+ChromeDriver driver = new ChromeDriver();
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		try {
@@ -21,19 +17,15 @@ public class FirstTestCase {
 		}
 		driver.manage().window().maximize();
 		
-		
-		String Title = driver.getTitle();
-		System.out.println(Title);
-		
-		System.out.println(driver.getCurrentUrl());
-		
-		//System.out.println(driver.getPageSource());
-		
-		System.out.println(driver.getWindowHandle());
-		
 		driver.findElement(By.linkText("OrangeHRM, Inc")).click();
-		Set <String> windows = driver.getWindowHandles();
-		System.out.println(windows);
+		try {
+		    Thread.sleep(5000);
+		} catch (InterruptedException e) {
+		    e.printStackTrace();
+		}
+		
+		//driver.close();
+		driver.quit();
 	}
 
 }
