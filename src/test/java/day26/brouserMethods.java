@@ -13,7 +13,7 @@ ChromeDriver driver = new ChromeDriver();
 		try {
 		    Thread.sleep(5000);
 		} catch (InterruptedException e) {
-		    e.printStackTrace();
+		    e.printStackTrace(); 
 		}
 		driver.manage().window().maximize();
 		
