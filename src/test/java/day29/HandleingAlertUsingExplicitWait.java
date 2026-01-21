@@ -30,7 +30,6 @@ public class HandleingAlertUsingExplicitWait {
 		System.out.println(myalert.getText());
 		myalert.accept();
 		
-		
 	}
 
 }
