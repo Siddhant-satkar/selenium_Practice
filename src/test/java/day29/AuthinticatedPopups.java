@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AuthinticatedPopups {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stu
 		
 		// read in the notebook 
 		
